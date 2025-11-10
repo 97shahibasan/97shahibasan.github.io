@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basanti Shahi - Angular Developer</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome 4.7.0 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="#home">BS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section min-vh-100 d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <div class="profile-image-wrapper mb-4 mb-lg-0">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop" alt="Basanti Shahi" class="profile-image rounded-circle">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <p class="text-muted mb-2">Welcome, I'm</p>
+                        <h1 class="display-4 fw-bold mb-3">Basanti Shahi</h1>
+                        <h2 class="text-primary mb-4">
+                            <span id="typed"></span>
+                        </h2>
+                        <p class="lead text-muted mb-5">
+                            Results-driven Frontend Developer with 3+ years of experience specializing in Angular. Building dynamic, responsive, and user-friendly web applications with a passion for quality and performance.
+                        </p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary btn-lg me-3" data-bs-toggle="modal" data-bs-target="#resumeModal">
+                                <i class="fa fa-download"></i> Download Resume
+                            </button>
+                            <a href="#contact" class="btn btn-outline-primary btn-lg">Get in Touch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light-gray">
+        <div class="container">
+            <h2 class="section-title mb-5 text-center">About Me</h2>
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&h=600&fit=crop" alt="About Basanti" class="img-fluid rounded-3 shadow-professional">
+                </div>
+                <div class="col-lg-7">
+                    <div class="about-content">
+                        <p class="lead text-muted mb-4">
+                            I'm a passionate Frontend Developer with expertise in modern web technologies. My journey in tech began with a strong foundation in Computer Science, and I've built my career on creating beautiful, functional, and performance-optimized applications.
+                        </p>
+                        <p class="text-muted mb-4">
+                            Currently working at NO Brain IT Solutions, where I collaborate with talented teams to deliver scalable solutions. I'm proficient in Angular, TypeScript, and the complete modern web development stack.
+                        </p>
+                        <div class="about-highlights row g-3">
+                            <div class="col-md-4">
+                                <div class="highlight-item text-center py-3">
+                                    <i class="fa fa-code fa-2x text-primary mb-2 d-block"></i>
+                                    <h5>Clean Code</h5>
+                                    <p class="text-muted small">Writing maintainable, scalable code following industry best practices.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="highlight-item text-center py-3">
+                                    <i class="fa fa-users fa-2x text-primary mb-2 d-block"></i>
+                                    <h5>Team Collaboration</h5>
+                                    <p class="text-muted small">Strong communicator who works effectively in Agile environments.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="highlight-item text-center py-3">
+                                    <i class="fa fa-lightbulb-o fa-2x text-primary mb-2 d-block"></i>
+                                    <h5>Problem Solver</h5>
+                                    <p class="text-muted small">Passionate about finding elegant solutions to complex challenges.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5">
+        <div class="container">
+            <h2 class="section-title mb-5 text-center">Education</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-8">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="education-card">
+                                    <div class="education-header d-flex justify-content-between align-items-start">
+                                        <div>
+                                            <h4 class="text-primary mb-1">B.Tech in Computer Science Engineering</h4>
+                                            <p class="text-muted mb-0">Sushila Devi Bansal College of Technology</p>
+                                        </div>
+                                        <span class="badge bg-primary">2015 - 2019</span>
+                                    </div>
+                                    <p class="text-muted mt-3">Comprehensive education in computer science fundamentals, algorithms, web development, and software engineering principles.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="education-card">
+                                    <div class="education-header d-flex justify-content-between align-items-start">
+                                        <div>
+                                            <h4 class="text-primary mb-1">10th & 12th (Science Stream)</h4>
+                                            <p class="text-muted mb-0">Maa Umiya Patidar Higher Secondary School, Indore</p>
+                                        </div>
+                                        <span class="badge bg-primary">2013 - 2015</span>
+                                    </div>
+                                    <p class="text-muted mt-3">Strong foundation in science and mathematics, developing critical thinking and problem-solving skills.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light-gray">
+        <div class="container">
+            <h2 class="section-title mb-5 text-center">Technical Skills</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-category text-center">
+                        <i class="fa fa-code fa-3x text-primary mb-4 d-block"></i>
+                        <h5 class="mb-4">Frontend</h5>
+                        <ul class="skill-list">
+                            <li class="mb-2"><span class="badge bg-primary w-100 d-block py-2">Angular v12+</span></li>
+                            <li class="mb-2"><span class="badge bg-primary w-100 d-block py-2">TypeScript</span></li>
+                            <li class="mb-2"><span class="badge bg-primary w-100 d-block py-2">HTML5</span></li>
+                            <li class="mb-2"><span class="badge bg-primary w-100 d-block py-2">CSS3</span></li>
+                            <li class="mb-2"><span class="badge bg-primary w-100 d-block py-2">RxJS</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-category text-center">
+                        <i class="fa fa-cube fa-3x text-primary mb-4 d-block"></i>
+                        <h5 class="mb-4">Libraries & Frameworks</h5>
+                        <ul class="skill-list">
+                            <li class="mb-2"><span class="badge bg-primary w-100 d-block py-2">Angular Material</span></li>
+                            <li class="mb-2"><span class="badge bg-primary w-100 d-block py-2">Bootstrap</span></li>
+                            <li class="mb-2"><span class="badge bg-primary w-100 d-block py-2">jQuery</span></li>
+                            <li class="mb-2"><span class="badge bg-primary w-100 d-block py-2">GSAP</span></li>
+                            <li class="mb-2"><span class="badge bg-primary w-100 d-block py-2">AOS.js</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-category text-center">
+                        <i class="fa fa-git fa-3x text-primary mb-4 d-block"></i>
+                        <h5 class="mb-4">Tools & Version Control</h5>
+                        <ul class="skill-list">
+                            <li class="mb-2"><span class="badge bg-primary w-100 d-block py-2">Git</span></li>
+                            <li class="mb-2"><span class="badge bg-primary w-100 d-block py-2">GitHub</span></li>
+                            <li class="mb-2"><span class="badge bg-primary w-100 d-block py-2">Visual Studio Code</span></li>
+                            <li class="mb-2"><span class="badge bg-primary w-100 d-block py-2">Postman</span></li>
+                            <li class="mb-2"><span class="badge bg-primary w-100 d-block py-2">Swagger</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-category text-center">
+                        <i class="fa fa-globe fa-3x text-primary mb-4 d-block"></i>
+                        <h5 class="mb-4">Languages</h5>
+                        <ul class="skill-list">
+                            <li class="mb-2"><span class="badge bg-primary w-100 d-block py-2">English</span></li>
+                            <li class="mb-2"><span class="badge bg-primary w-100 d-block py-2">Hindi</span></li>
+                            <li class="mb-2"><span class="badge bg-primary w-100 d-block py-2">Nepali</span></li>
+                            <li class="mb-2"><span class="badge bg-primary w-100 d-block py-2">Marathi</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="section-title mb-5 text-center">Featured Projects</h2>
+            <div class="row g-4">
+                <!-- EdTech Project -->
+                <div class="col-lg-6">
+                    <div class="project-card h-100">
+                        <div class="project-image-placeholder bg-primary d-flex align-items-center justify-content-center">
+                            <i class="fa fa-graduation-cap fa-3x text-white"></i>
+                        </div>
+                        <div class="project-body p-4">
+                            <h4 class="text-primary mb-3">EdTech Platform</h4>
+                            <p class="text-muted mb-3">
+                                An educational platform designed to enhance the Teaching and Learning Process. Developed dynamic and adaptable web applications with comprehensive front-end software.
+                            </p>
+                            <div class="tech-stack mb-3">
+                                <span class="badge bg-light text-dark me-2">Angular</span>
+                                <span class="badge bg-light text-dark me-2">Bootstrap</span>
+                                <span class="badge bg-light text-dark">RESTful APIs</span>
+                            </div>
+                            <p class="small text-muted mb-0">Team: 9 members</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CyberSecurity Project -->
+                <div class="col-lg-6">
+                    <div class="project-card h-100">
+                        <div class="project-image-placeholder bg-primary d-flex align-items-center justify-content-center">
+                            <i class="fa fa-shield fa-3x text-white"></i>
+                        </div>
+                        <div class="project-body p-4">
+                            <h4 class="text-primary mb-3">CyberSecurity Learning Platform</h4>
+                            <p class="text-muted mb-3">
+                                Interactive cybersecurity learning platform transforming users from beginners to professionals. Created reusable components and integrated APIs for seamless backend communication.
+                            </p>
+                            <div class="tech-stack mb-3">
+                                <span class="badge bg-light text-dark me-2">Angular 17</span>
+                                <span class="badge bg-light text-dark me-2">MongoDB</span>
+                                <span class="badge bg-light text-dark">HTTPClient</span>
+                            </div>
+                            <p class="small text-muted mb-0">Team: 11 members</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IClinRT Project -->
+                <div class="col-lg-6">
+                    <div class="project-card h-100">
+                        <div class="project-image-placeholder bg-primary d-flex align-items-center justify-content-center">
+                            <i class="fa fa-medkit fa-3x text-white"></i>
+                        </div>
+                        <div class="project-body p-4">
+                            <h4 class="text-primary mb-3">IClinRT - Clinical Trials</h4>
+                            <p class="text-muted mb-3">
+                                Clinical research platform for evaluating medical, surgical, and behavioral interventions. Developed comprehensive front-end solutions with clean and maintainable code.
+                            </p>
+                            <div class="tech-stack mb-3">
+                                <span class="badge bg-light text-dark me-2">Angular</span>
+                                <span class="badge bg-light text-dark me-2">HTML5/CSS3</span>
+                                <span class="badge bg-light text-dark">REST APIs</span>
+                            </div>
+                            <p class="small text-muted mb-0">Team: 10 members</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Highlight -->
+                <div class="col-lg-6">
+                    <div class="project-card h-100">
+                        <div class="project-image-placeholder bg-primary d-flex align-items-center justify-content-center">
+                            <i class="fa fa-briefcase fa-3x text-white"></i>
+                        </div>
+                        <div class="project-body p-4">
+                            <h4 class="text-primary mb-3">Current Role - Angular Developer</h4>
+                            <p class="text-muted mb-3">
+                                At NO Brain IT Solutions since February 2022. Designing, building, and maintaining scalable Angular-based web applications. Collaborating with teams and participating in Agile processes.
+                            </p>
+                            <div class="tech-stack mb-3">
+                                <span class="badge bg-light text-dark me-2">Angular</span>
+                                <span class="badge bg-light text-dark me-2">Agile</span>
+                                <span class="badge bg-light text-dark">DevOps</span>
+                            </div>
+                            <p class="small text-muted mb-0"><strong>Since:</strong> Feb 2022 - Present</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light-gray">
+        <div class="container">
+            <h2 class="section-title mb-5 text-center">Get In Touch</h2>
+            
+            <div class="row g-5 justify-content-center">
+                <div class="col-lg-8">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="contact-item h-100 d-flex flex-column justify-content-center p-4 bg-white rounded-3 shadow-professional">
+                                <i class="fa fa-envelope text-primary mb-3" style="font-size: 2.5rem;"></i>
+                                <h6 class="mb-2 text-dark">Email</h6>
+                                <a href="mailto:97shahibasan@gmail.com" class="text-muted h6 mb-0">97shahibasan@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contact-item h-100 d-flex flex-column justify-content-center p-4 bg-white rounded-3 shadow-professional">
+                                <i class="fa fa-phone text-primary mb-3" style="font-size: 2.5rem;"></i>
+                                <h6 class="mb-2 text-dark">Phone</h6>
+                                <a href="tel:+916261950965" class="text-muted d-block mb-1">+91 6261950965</a>
+                                <a href="tel:+919826375983" class="text-muted d-block">+91 9826375983</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contact-item h-100 d-flex flex-column justify-content-center p-4 bg-white rounded-3 shadow-professional">
+                                <i class="fa fa-map-marker text-primary mb-3" style="font-size: 2.5rem;"></i>
+                                <h6 class="mb-2 text-dark">Location</h6>
+                                <p class="text-muted h6 mb-0">Bangalore, Pune</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contact-item h-100 d-flex flex-column justify-content-center p-4 bg-white rounded-3 shadow-professional">
+                                <i class="fa fa-users text-primary mb-3" style="font-size: 2.5rem;"></i>
+                                <h6 class="mb-2 text-dark">Connect</h6>
+                                <div class="social-links">
+                                    <a href="https://linkedin.com/in/basan-shahi" target="_blank" class="social-link me-3 text-primary">
+                                        <i class="fa fa-linkedin fa-lg"></i>
+                                    </a>
+                                    <a href="https://github.com/97shahibasan" target="_blank" class="social-link me-3 text-primary">
+                                        <i class="fa fa-github fa-lg"></i>
+                                    </a>
+                                    <a href="mailto:97shahibasan@gmail.com" class="social-link text-primary">
+                                        <i class="fa fa-envelope fa-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Basanti Shahi. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <a href="#home" class="text-light me-3"><i class="fa fa-arrow-up"></i> Back to Top</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Resume Modal -->
+    <div class="modal fade" id="resumeModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Download Resume</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Click the button below to download my resume (PDF).</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="https://example.com/resume.pdf" download class="btn btn-primary">
+                        <i class="fa fa-download me-2"></i> Download PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Typed.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+    <script src="style.js"></script>
+    
+    <!-- Custom JS -->
+    <script>
+        // Smooth Scrolling for Navigation Links
+        $(document).ready(function() {
+            $('a[href^="#"]').on('click', function(e) {
+                e.preventDefault();
+                var target = $(this.getAttribute('href'));
+                if(target.length) {
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top - 80
+                    }, 1000);
+                }
+            });
+
+            // Collapse navbar on link click
+            $('.navbar-collapse a').click(function() {
+                $('.navbar-collapse').collapse('hide');
+            });
+
+            // Typed.js Animation
+            new Typed('#typed', {
+                strings: [
+                    'Angular Developer',
+                    'Frontend Specialist',
+                    'Web Application Developer',
+                    'Problem Solver'
+                ],
+                typeSpeed: 80,
+                backSpeed: 50,
+                backDelay: 1500,
+                loop: true
+            });
+        });
+
+        // Sticky Navigation Active Link
+        $(window).on('scroll', function() {
+            var scrollPosition = $(this).scrollTop();
+            $('.navbar-nav a').each(function() {
+                var section = $(this.getAttribute('href'));
+                if(section.length) {
+                    if(scrollPosition >= section.offset().top - 100) {
+                        $('.navbar-nav a').removeClass('active');
+                        $(this).addClass('active');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
